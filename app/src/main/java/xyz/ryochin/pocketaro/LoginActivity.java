@@ -15,7 +15,7 @@ public class LoginActivity extends ActionBarActivity implements LoginView, View.
     private static final String TAG = LoginActivity.class.getSimpleName();
     private final LoginActivity self = this;
 
-    private LoginPresenterImpl loginPresenter;
+    private LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class LoginActivity extends ActionBarActivity implements LoginView, View.
     }
 
     @Override
-    public void navigateTo() {
+    public void navigateToHome() {
         Log.e(TAG, "navigateTo()");
     }
 

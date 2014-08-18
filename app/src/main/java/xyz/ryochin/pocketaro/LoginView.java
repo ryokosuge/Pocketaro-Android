@@ -18,6 +18,6 @@ public interface LoginView {
 
     public void showLoginBrowser(String oauthURL);
 
-    public void navigateTo();
+    public void navigateToHome();
 
 }

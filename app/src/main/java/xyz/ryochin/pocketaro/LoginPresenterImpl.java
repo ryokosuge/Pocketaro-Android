@@ -17,7 +17,7 @@ public class LoginPresenterImpl implements LoginPresenter {
     private final LoginPresenterImpl self = this;
 
     private LoginView view;
-    private LoginInteractorImpl loginInteractor;
+    private LoginInteractor loginInteractor;
 
     public LoginPresenterImpl(LoginView view, Context context) {
         this.view = view;
@@ -48,7 +48,7 @@ public class LoginPresenterImpl implements LoginPresenter {
                 self.view.hideProgress();
                 Log.e(TAG, "accessToken = " + accessToken);
                 Log.e(TAG, "userName = " + userName);
-                self.view.navigateTo();
+                self.view.navigateToHome();
             }
         });
     }
